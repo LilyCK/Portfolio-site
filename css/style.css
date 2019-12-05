@@ -3,102 +3,422 @@ Colors used:
 Qwest Color (Purple): #3A2031; #E95330;
 Lemonaid Color (Blue/Green):3EB497;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FFFFFF;
-  font-family:'Raleway', sans-serif;
-  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
-  }
+}
 
-  h1,h2,h3,h4 {
-    line-height: 1.4;
-  }
-  h1{
-    font-family: Playfair Display;
-    font-size: 1.66em;
-    font-weight: 900;
-  }
-  h2{
-  font-family: Playfair Display;
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.5em;
   font-weight: 900;
-  }
-  h3{
-  font-family: Raleway;
-  font-size: 1.22em;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.31em;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.25em;
   font-weight: 600;
-  }
-  h4{
-  font-family: Raleway;
-  font-size: 1em;
+}
+
+h4 {
   font-weight: 600;
-  }
+}
 
 img {
   width: 100%;
 }
 
 a {
-  color: #E95330;
-  text-decoration: none; /* No underlining */
+  color: #000000;
 }
-a:visited { /* visited link */
-  color: #E95330;
-  text-decoration: none; /* No underlining */
+
+a:visited {
+  /* visited link */
+  color: #000000;
 }
+
 a:hover,
 a:focus {
-  color: #E95330;
-  text-decoration: underline;
+  color: #0071FF;
+  text-decoration: none;
 }
-a:active { /* selected link */
-  color: #C34D32;
-  text-decoration: underline;
-}
-.button {
-  font-size: 1;
+
+a:active {
+  /* selected link */
   font-weight: 600;
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Playfair Display !important;
+  font-size: 1em !important;
+  font-weight: 900 !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+  /* No underlining */
+}
+
+.button {
+  font-weight: 600;
+  display: inline-block;/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #E95330;
-  color: #ffffff !important; /* needed to override the default link color */
-  font-weight: 400;
+  color: #ffffff !important;/* needed to override the default link color */
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;/* width of the border, type, color */
   transition: 0.2s opacity;
+  text-decoration: none;
 }
-.button:visited { /* visited button */
-  text-decoration: none !important; /* No underlining */
-}
-.button:hover {
+
+.button:hover,
+.button:focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
-.button:active {
-  color: #C34D32;
-  text-decoration: none;
-}
+
 .button.contact {
-  font-size: 1;
-  font-weight: 600;
   background-color: transparent;
   color: #000000 !important;
   border: 2px solid #000000 !important;
 }
-.button.contact:visited { /* visited button contact */
-  text-decoration: none !important;; /* No underlining */
-}
-.button.contact:hover {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+
+.button.contact:hover,
+.button:focus {
   background-color: #E95330 !important;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #ffffff !important;
   border: 2px solid #E95330 !important;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  opacity: 0.8;/* Reduces the opacity of the button to 80% */
 }
+
 .button.contact:active {
   color: #C34D32 !important;
   text-decoration: none !important;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 10px
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+p {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* Centers text */
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero p {
+  text-align: center;
+  /* Centers text */
+}
+
+#work h2 {
+  text-align: center;
+  /* Centers text */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#contact h2 {
+  margin-top: 120px;
+  text-align: center;
+  /* Centers text */
+}
+
+#contact p {
+  text-align: center;
+  /* Centers text */
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 1px 30px 0px rgba(50, 50, 50, 0.55);
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  color: #000000 !important;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+nav > ul > li > a:visited {
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  font-weight: 600 !important;
+}
+
+nav > ul > li > a:active{
+  font-weight: 600 !important;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 83.95px;
+}
+
+#story .row {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#about h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#story h2 {
+  text-align: center;
+  /* Centers text */
+}
+
+.wrapper {
+  margin-top: 25px;
+  margin bottom: 40px;
+  text-align: center;
+  /* Centers text */
+}
+
+#story h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#introbackgroundqwest {
+  background-color: #3A2031;
+  color: #FFFFFF;
+  /* Centers text */
+}
+
+#introbackgroundqwest h1 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+#introbackgroundqwest picture {
+  margin-bottom: 24px;
+  display:inline-block;
+  text-align: center;
+}
+
+#introbackgroundqwest p {
+  padding-bottom: 16px;
+}
+.duration {
+  padding-bottom: 60px!important;
+  margin-bottom: 0px;
+}
+
+#research h2{
+  margin-top: 53px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#research h3{
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.process {
+  margin-top: 0px;
+  margin-bottom: 40px;
+
+}
+
+#research h4{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+#postit p {
+  font-size: 0.88em;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.postit1 {
+  background-color: #FFF28D;
+  margin: 0px 126px 20px 0px;
+  padding: 30px 24px 30px 25px;
+}
+
+.postit2 {
+  background-color: #FFC050;
+  margin: 0px 0px 20px 126px;
+  padding: 21px 24px 21px 25px;
+}
+
+.postit3 {
+  background-color: #67E1FA;
+  margin: 0px 100px 25px 24px;
+  padding: 12px 18px 12px 19px;
+}
+
+.insight1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.postit4 {
+  background-color: #FFF28D;
+  margin: 0px 0px 20px 125px;
+  padding: 48px 24px 48px 25px;
+}
+
+.postit5 {
+  background-color: #FFF28D;
+  margin: 0px 126px 20px 0px;
+  padding: 30px 24px 30px 25px;
+}
+
+.postit6 {
+  background-color: #67E1FA;
+  margin: 0px 26px 25px 100px;
+  padding: 30px 24px 30px 25px;
+}
+
+.insight2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#analysis h2{
+  margin-top: 0px;
+  text-align: center;
+}
+
+#analysis h3{
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.personas {
+  margin-top: 40px
+}
+
+.usergoal {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-style: italic;
+  text-align: center;
+}
+
+.userjourney {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+#design h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#design h3 {
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.sitemap {
+  margin-top:40px;
+}
+
+.designpattern {
+  margin-top:40px;
+  margin-bottom: 16.6px;
+}
+
+#design h4 {
+  margin-bottom: 40px;
+}
+
+#usabilitytests h2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#usabilitytests h3 {
+  margin-bottom: 16px;
+}
+
+#usabilitytests h4 {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.iterations {
+  margin-bottom: 25px;
+}
+
+.prototypelink {
+  margin-top:40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#conclusion h2{
+  margin-bottom: 40px;
+  text-align: center;
 }
