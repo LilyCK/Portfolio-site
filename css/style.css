@@ -80,37 +80,39 @@ a:active {
 }
 
 .button2 {
-  font-family: 'Raleway', sans-serif !important;
-  background-color: transparent;
-  border: 1px solid #000000 !important;
-  padding: 10px;
-  border-radius: 3px;
+  text-weight: 300;
+  display: inline-block;
+  background-color: #E95330;
+  color: white !important;
+  font-weight: 400;
   text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  border-bottom: 2px solid #E95330;
+  transition: 0.2s opacity;
 }
 
 .button2:hover,
 .button2:focus {
-  text-weight: 600;
-  background-color: #E95330 !important;
-  color: #ffffff !important;
-  border: 1px solid #E95330 !important;
+  opacity: 0.8;
 }
 
 .button3 {
-  font-family: 'Raleway', sans-serif !important;
-  background-color: transparent;
-  border: 1px solid #000000 !important;
-  padding: 10px;
-  border-radius: 3px;
+  text-weight: 300;
+  display: inline-block;
+  background-color: #3EB497;
+  color: white !important;
+  font-weight: 400;
   text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  border-bottom: 2px solid #3EB497;
+  transition: 0.2s opacity;
 }
 
 .button3:hover,
 .button3:focus {
-  text-weight: 600;
-  background-color: #3EB497 !important;
-  color: #ffffff !important;
-  border: 1px solid #3EB497 !important;
+  opacity: 0.8;
 }
 
 /* Layout styling */
@@ -156,6 +158,40 @@ p {
   margin-bottom: 25px;
 }
 
+.indeximg3 {
+  width 100%;
+  max-width 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 35s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 35s cloud-move-reverse infinite alternate linear;
+}
+
 #work h3{
   margin-bottom: 16px;
 }
@@ -198,6 +234,8 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
+  font-family:'Roboto', sans-serif !important;
+  font-weight: 300 !important;
   color: #000000 !important;
   text-decoration: none;
   padding: 0 15px;
@@ -209,11 +247,11 @@ nav>ul>li>a:visited {
 }
 
 nav>ul>li>a:hover {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 nav>ul>li>a:active {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 #hero {
@@ -257,12 +295,6 @@ main {
   /* Centers text */
 }
 
-#introbackgroundqwest {
-  background-color: #50023D;
-  color: #FFFFFF;
-  /* Centers text */
-}
-
 #introbackgroundqwest h1 {
   margin-top: 0px;
   margin-bottom: 40px;
@@ -273,6 +305,10 @@ main {
 #introbackgroundqwest picture {
   margin-bottom: 24px;
   display: inline-block;
+  text-align: center;
+}
+
+.qwestlogo {
   text-align: center;
 }
 
@@ -307,55 +343,15 @@ main {
   margin-bottom: 25px;
 }
 
-#postit p {
-  font-size: 0.88em;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.postit1 {
-  background-color: #FFF28D;
-  margin: 0px 126px 20px 0px;
-  padding: 30px 24px 30px 25px;
-}
-
-.postit2 {
-  background-color: #FFC050;
-  margin: 0px 0px 20px 126px;
-  padding: 21px 24px 21px 25px;
-}
-
-.postit3 {
-  background-color: #67E1FA;
-  margin: 0px 100px 25px 24px;
-  padding: 12px 18px 12px 19px;
-}
-
 .insight1 {
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 40px;
-}
-
-.postit4 {
-  background-color: #FFF28D;
-  margin: 0px 0px 20px 125px;
-  padding: 48px 24px 48px 25px;
-}
-
-.postit5 {
-  background-color: #FFF28D;
-  margin: 0px 126px 20px 0px;
-  padding: 30px 24px 30px 25px;
-}
-
-.postit6 {
-  background-color: #67E1FA;
-  margin: 0px 26px 25px 100px;
-  padding: 30px 24px 30px 25px;
 }
 
 .insight2 {
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
@@ -436,4 +432,86 @@ main {
 #conclusion h2 {
   margin-bottom: 40px;
   text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  position: 99px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+body {
+  font-size: 16px;
+}
+
+#hero span {
+  display: block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float:left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 { margin-top: 0;}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-md-7 {
+  width: 60%;
+}
+
+.col-md-5 {
+  width: 40%;
+}
+
+[class*="col-"] {
+  float:left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
