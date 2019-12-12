@@ -1,0 +1,94 @@
+<div>
+  <h4> Interaction </h4>
+  <div id="postit">
+    <div class="postit1">
+      <p>
+        When I would play Pokemon Go, I wouldn’t engage with my surroundings.
+      </p>
+    </div>
+    <div class="postit2">
+      <p>
+        When they’d be a pokemon nearby [in Pokemon Go], everyone would just stare at their phones.
+      </p>
+    </div>
+    <div class="postit3">
+      <p>
+        Pokemon Go created a bridge between the real and virtual world, but the experience is wholly through your phone.
+      </p>
+    </div>
+  </div>
+  <p class="insight1">
+    Users want activities to extend beyond their screen. They want to interact with their surroundings and with their friends as they find the experience enjoyable and rewarding.
+  </p>
+</div>
+
+<div>
+  <h4> Authentic, Local Experience </h4>
+  <div id="postit">
+    <div class="postit4">
+      <p>
+        I like going to places that locals would go to.
+      </p>
+    </div>
+    <div class="postit5">
+      <p>
+        [In Pokemon Go], they wouldn’t bring you to interesting/unique places.
+      </p>
+    </div>
+    <div class="postit6">
+      <p>
+        I always want to feel like a local but it’s not easy if you don’t know anyone.
+      </p>
+    </div>
+  </div>
+  <p class="insight2">
+    Users want to visit local, interesting and unique locations. They want to have an authentic experience of the places they live in/travel to, in search for a more in depth understanding of those places.
+  </p>
+</div>
+
+#postit p {
+  font-size: 0.88em;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.postit1 {
+  background-color: #FFF28D;
+  margin: 0px 126px 20px 0px;
+  padding: 30px 24px 30px 25px;
+}
+
+.postit2 {
+  background-color: #FFC050;
+  margin: 0px 0px 20px 126px;
+  padding: 21px 24px 21px 25px;
+}
+
+.postit3 {
+  background-color: #67E1FA;
+  margin: 0px 100px 25px 24px;
+  padding: 12px 18px 12px 19px;
+}
+
+.insight1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.postit4 {
+  background-color: #FFF28D;
+  margin: 0px 0px 20px 125px;
+  padding: 48px 24px 48px 25px;
+}
+
+.postit5 {
+  background-color: #FFF28D;
+  margin: 0px 126px 20px 0px;
+  padding: 30px 24px 30px 25px;
+}
+
+.postit6 {
+  background-color: #67E1FA;
+  margin: 0px 26px 25px 100px;
+  padding: 30px 24px 30px 25px;
+}
