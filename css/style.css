@@ -10,7 +10,7 @@ Lemonaid Color (Blue/Green):3EB497;
 body {
   background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #000000;
@@ -72,7 +72,7 @@ a:active {
 
 .logo {
   font-family: 'Raleway', sans-serif !important;
-  font-size: 1em !important;
+  font-size: 1em;
   font-weight: 600 !important;
   color: #000000 !important;
   text-decoration: none !important;
@@ -146,28 +146,31 @@ p {
   text-align: center;
   /* Centers text */
   margin-top: 0px;
-  margin-bottom: 40px;
 }
 
-.indeximg1{
+#work img {
+  margin-top: 40px;
   margin-bottom: 25px;
 }
 
-.indeximg2{
-  margin-top: 60px;
-  margin-bottom: 25px;
-}
-
-.indeximg3 {
+#work svg {
   width 100%;
   max-width 100%;
-  height: auto;
+  height: auto
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -175,8 +178,13 @@ p {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -184,19 +192,25 @@ p {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 35s cloud-move-reverse infinite alternate linear;
 }
 
-#work h3{
+#work h3 {
   margin-bottom: 16px;
+  margin-top:0;
 }
 
-#work p{
+#work p {
   margin-bottom: 25px;
 }
 
@@ -217,6 +231,9 @@ header {
   padding: 10px 0;
   width: 100%;
   position: fixed;
+  -webkit-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -227,6 +244,7 @@ nav>ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -234,7 +252,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  font-family:'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 300 !important;
   color: #000000 !important;
   text-decoration: none;
@@ -272,25 +290,24 @@ main {
 
 #about h1 {
   text-align: center;
-  margin-top:50px;
-  margin-bottom:40px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 #story h2 {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 16px;
-
 }
 
 .download {
-  margin-top:16px;
-  margin-bottom:15px;
+  margin-top: 16px;
+  margin-bottom: 15px;
 }
 
-.wrapper {
+.social {
   margin-top: 25px;
-  margin bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;
   /* Centers text */
 }
@@ -309,7 +326,9 @@ main {
 }
 
 .qwestlogo {
-  text-align: center;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #introbackgroundqwest p {
@@ -343,6 +362,12 @@ main {
   margin-bottom: 25px;
 }
 
+.postit {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .insight1 {
   text-align: center;
   margin-top: 20px;
@@ -352,16 +377,16 @@ main {
 .insight2 {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 #analysis h2 {
-  margin-top: 0px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
 #analysis h3 {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 16px;
 }
 
@@ -384,20 +409,16 @@ main {
 #design h2 {
   margin-top: 20px;
   text-align: center;
+  margin: 60px;
 }
 
 #design h3 {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 16px;
 }
 
 .sitemap {
   margin-top: 40px;
-}
-
-.designpattern {
-  margin-top: 40px;
-  margin-bottom: 16.6px;
 }
 
 #design h4 {
@@ -411,15 +432,12 @@ main {
 }
 
 #usabilitytests h3 {
+  margin-top: 0px;
   margin-bottom: 16px;
 }
 
 #usabilitytests h4 {
   margin-top: 40px;
-  margin-bottom: 25px;
-}
-
-.iterations {
   margin-bottom: 25px;
 }
 
@@ -430,6 +448,7 @@ main {
 }
 
 #conclusion h2 {
+  margin-top: 0px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -437,42 +456,59 @@ main {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   header {
-  text-align: unset;
-  position: 99px;
-}
+    text-align: unset;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
+  }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-body {
-  font-size: 16px;
-}
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
 
-#hero span {
-  display: block;
-}
+  body {
+    font-size: 16px;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  #hero span {
+    display: block;
+  }
 
-[class*="col-"] {
-  float:left;
-  padding: 10px;
-}
+  .col-md-6 {
+    width: 50%;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
-#about-page h3 { margin-top: 0;}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  .explanation {
+    float: right;
+  }
 
 }
 
@@ -480,38 +516,44 @@ body {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   body {
     font-size: 18px;
   }
 
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-md-7 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .qwestlogo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
-.col-md-7 {
-  width: 60%;
-}
-
-.col-md-5 {
-  width: 40%;
-}
-
-[class*="col-"] {
-  float:left;
-  padding: 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
