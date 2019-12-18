@@ -76,7 +76,7 @@ a:active {
   font-weight: 600 !important;
   color: #000000 !important;
   text-decoration: none !important;
-  /* No underlining */
+  max-width: 150px;
 }
 
 .button2 {
@@ -146,11 +146,6 @@ p {
   text-align: center;
   /* Centers text */
   margin-top: 0px;
-}
-
-#work img {
-  margin-top: 40px;
-  margin-bottom: 25px;
 }
 
 #work svg {
@@ -226,14 +221,13 @@ p {
 }
 
 header {
-  text-align: center;
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 0px;
   width: 100%;
   position: fixed;
   -webkit-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -247,8 +241,24 @@ nav>ul {
   margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
 
 nav>ul>li>a {
@@ -280,7 +290,7 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 83.95px;
+  padding-top: 56px;
 }
 
 #story .row {
@@ -460,9 +470,6 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     background-color: #ffffff;
-    -webkit-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 4px 60px -33px rgba(0, 0, 0, 0.75);
   }
 
   nav {
@@ -475,7 +482,19 @@ Medium devices (640px and larger)
     list-style-type: none;
     padding: 0;
     width: 100%;
-    margin: 0;
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   body {
@@ -506,8 +525,10 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  .explanation {
-    float: right;
+  .explanation p{
+    margin-left: auto;
+    margin-right: 0;
+    float: unset;
   }
 
 }
@@ -519,6 +540,7 @@ Large devices (1024px or larger)
   body {
     font-size: 18px;
   }
+
 
   .container {
     max-width: 1200px;
