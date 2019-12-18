@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d6d4546d0f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -17,29 +17,29 @@
   <header>
     <div class="container">
       <div id="myNavtoggle" class="navtoggle">
-      <a href="#" class="logo">Lily Cabot-King</a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" id="navigation">Work</a></li>
-          <li><a href="about.html" id="navigation">About</a></li>
-          <li><a href="#contact" id="navigation" onclick="myFunction()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+        <a href="#" class="logo">Lily Cabot-King</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" id="navigation">Work</a></li>
+            <li><a href="about.html" id="navigation">About</a></li>
+            <li><a href="#contact" id="navigation" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
 
-    <div id="introbackgroundqwest" >
+    <div id="introbackgroundqwest">
       <div class="container">
         <h1> How might we help tourists and locals explore and interact with their surroundings in a fun and educative way? </h1>
         <div class="qwestlogo">
           <picture>
-          <source srcset="img/qwest/mobile/qwestlogo@2x.png" media="(max-width:767px)">
-          <img src="img/qwest/desktop/qwestlogo@3x.png" alt="Qwest Logo">
-        </picture>
+            <source srcset="img/qwest/mobile/qwestlogo@2x.png" media="(max-width:767px)">
+            <img src="img/qwest/desktop/qwestlogo@3x.png" alt="Qwest Logo">
+          </picture>
         </div>
         <p>
           A scavenger hunt app which enables its users to take part in ready-made or customisable hunts for real location near them and interact with these locations through a variety of challenges.
@@ -91,11 +91,11 @@
 
         <div>
           <h4> Authentic, Local Experience </h4>
-          <div  class="postit">
-              <picture>
-                <source srcset="img/qwest/mobile/postits2@2x.png" media="(max-width:639px)">
-                <img src="img/qwest/desktop/postits2@3x.png" alt="post-its">
-              </picture>
+          <div class="postit">
+            <picture>
+              <source srcset="img/qwest/mobile/postits2@2x.png" media="(max-width:639px)">
+              <img src="img/qwest/desktop/postits2@3x.png" alt="post-its">
+            </picture>
           </div>
           <p class="insight2">
             Users want to visit local, interesting and unique locations. They want to have an authentic experience of the places they live in/travel to, in search for a more in depth understanding of those places.
@@ -151,25 +151,25 @@
             Ana just arrived at her hotel in Paris. Her goal is to use Qwest so she can go and explore the neighbourhood around her hotel.
           </p>
           <div class="userjourney">
-          <picture>
-            <source srcset="img/qwest/mobile/userjourney@2x.jpg" media="(max-width:767px)">
-            <img src="img/qwest/desktop/userjourney@3x.jpg" alt="User Journey whilst Qwest">
-          </picture>
+            <picture>
+              <source srcset="img/qwest/mobile/userjourney@2x.jpg" media="(max-width:767px)">
+              <img src="img/qwest/desktop/userjourney@3x.jpg" alt="User Journey whilst Qwest">
+            </picture>
           </div>
           <div class="row">
-          <p class="col-md-6 col-md-5 explanation">
-            I thought it would be interesting to contrast Ana’s user journey when she’s using Qwest to a typical sightseeing journey when she is not using my app. This highlighted the improvements I would be making with my app, particulary at the
-            early stages of the journey.
-          </p>
+            <p class="col-md-6 col-md-5 explanation">
+              I thought it would be interesting to contrast Ana’s user journey when she’s using Qwest to a typical sightseeing journey when she is not using my app. This highlighted the improvements I would be making with my app, particulary at the
+              early stages of the journey.
+            </p>
           </div>
           <p class="usergoal">
             Ana just arrived at her hotel in Paris. Her goal is to find places to see around her hotel and explore that neighbourhood.
           </p>
           <div class="userjourney">
-          <picture>
-            <source srcset="img/qwest/mobile/userjourneynoapp@2x.jpg" media="(max-width:767px)">
-            <img src="img/qwest/desktop/userjourneynoapp@3x.jpg" alt="User Journey without Qwest">
-          </picture>
+            <picture>
+              <source srcset="img/qwest/mobile/userjourneynoapp@2x.jpg" media="(max-width:767px)">
+              <img src="img/qwest/desktop/userjourneynoapp@3x.jpg" alt="User Journey without Qwest">
+            </picture>
           </div>
         </div>
 
@@ -313,18 +313,18 @@
             <h4>Problem #1</h4>
           </div>
           <div class="row">
-          <div class="col-md-6 col-md-7">
-            <picture>
-              <source srcset="img/qwest/mobile/problem1@2x.jpg" media="(max-width:639px)">
+            <div class="col-md-6 col-md-7">
+              <picture>
+                <source srcset="img/qwest/mobile/problem1@2x.jpg" media="(max-width:639px)">
                 <img src="img/qwest/desktop/problem1@3x.jpg" alt="Problem #1 Wireframe">
               </picture>
-          </div>
-          <div class="col-md-6 col-md-5">
-            <p>
-              To most test participants it was not clear that the explanation for the search feature in the onboarding was being typed in the search bar. This was mostly due to the fact that I had not properly achieved the “typing” animation.
-              However, this made me realised that my “original” animation was not just confusing but was also inconsistent with the rest of the onboarding which consisted of coach marks.
-            </p>
-          </div>
+            </div>
+            <div class="col-md-6 col-md-5">
+              <p>
+                To most test participants it was not clear that the explanation for the search feature in the onboarding was being typed in the search bar. This was mostly due to the fact that I had not properly achieved the “typing” animation.
+                However, this made me realised that my “original” animation was not just confusing but was also inconsistent with the rest of the onboarding which consisted of coach marks.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -337,15 +337,15 @@
             <div class="col-md-6 col-md-7">
               <picture>
                 <source srcset="img/qwest/mobile/problem2@2x.png" media="(max-width:639px)">
-                  <img src="img/qwest/desktop/problem2@3x.png" alt="Problem #2 Wireframe">
-                </picture>
+                <img src="img/qwest/desktop/problem2@3x.png" alt="Problem #2 Wireframe">
+              </picture>
             </div>
             <div class="col-md-6 col-md-5">
-            <p>
-              I had not included any explanations for the “active hunt” button into the onboarding because I wanted to highlight only the two main features of the app - the search and customising features - but this turned out to be a mistake. Some
-              test participants pointed out that there was no explanation for this button and none of them could figure out what it was for.
-            </p>
-          </div>
+              <p>
+                I had not included any explanations for the “active hunt” button into the onboarding because I wanted to highlight only the two main features of the app - the search and customising features - but this turned out to be a mistake. Some
+                test participants pointed out that there was no explanation for this button and none of them could figure out what it was for.
+              </p>
+            </div>
           </div>
 
         </div>
@@ -355,18 +355,18 @@
             <h4> First solution to problem #1 and #2 </h4>
           </div>
           <div class="row">
-          <div class="iterations col-md-6 col-md-7">
-            <picture>
-              <source srcset="img/qwest/mobile/solution1@2x.jpg" media="(max-width:639px)">
-              <img src="img/qwest/desktop/solution1@3x.jpg" alt="Solution #1 Wireframe">
-            </picture>
-          </div>
-          <div class="col-md-6 col-md-5">
-            <p>
-              My first solution to this problem was to redesign the onboarding so that the design was more consistent and included an explanation for the “Active hunt” button, which I also renamed “Ongoing hunt”. However, I was not very satisfied
-              with this solution as I couldn’t ignore one of the test participants comment about how coach marks were not very useful, at least for the search bar and the “create hunt” button as both these elements were self-explanatory.
-            </p>
-          </div>
+            <div class="iterations col-md-6 col-md-7">
+              <picture>
+                <source srcset="img/qwest/mobile/solution1@2x.jpg" media="(max-width:639px)">
+                <img src="img/qwest/desktop/solution1@3x.jpg" alt="Solution #1 Wireframe">
+              </picture>
+            </div>
+            <div class="col-md-6 col-md-5">
+              <p>
+                My first solution to this problem was to redesign the onboarding so that the design was more consistent and included an explanation for the “Active hunt” button, which I also renamed “Ongoing hunt”. However, I was not very satisfied
+                with this solution as I couldn’t ignore one of the test participants comment about how coach marks were not very useful, at least for the search bar and the “create hunt” button as both these elements were self-explanatory.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -376,17 +376,17 @@
           </div>
           <div class="row">
             <div class="iterations col-md-6 col-md-7">
-            <picture>
-              <source srcset="img/qwest/mobile/solution2@2x.jpg" media="(max-width:639px)">
-              <img src="img/qwest/desktop/solution2@3x.jpg" alt="Final Solution Wireframe">
-            </picture>
-          </div>
-          <div class="col-md-6 col-md-5">
-            <p>
-              Instead of using coach marks, I decided to design a slide-through onboarding which highlights the main features of the app like I wanted originally. With this design, I was also able to include the sign up/log in feature which I had
-              forgotten to include in my previous designs. As for an explanation for the “Ongoing hunt” button, I used the empty state of the screen to explain its purpose to new users.
-            </p>
-          </div>
+              <picture>
+                <source srcset="img/qwest/mobile/solution2@2x.jpg" media="(max-width:639px)">
+                <img src="img/qwest/desktop/solution2@3x.jpg" alt="Final Solution Wireframe">
+              </picture>
+            </div>
+            <div class="col-md-6 col-md-5">
+              <p>
+                Instead of using coach marks, I decided to design a slide-through onboarding which highlights the main features of the app like I wanted originally. With this design, I was also able to include the sign up/log in feature which I had
+                forgotten to include in my previous designs. As for an explanation for the “Ongoing hunt” button, I used the empty state of the screen to explain its purpose to new users.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -401,7 +401,7 @@
       <div class="row">
         <div class="col-md-6 col-md-7">
 
-        <h2> Conclusion </h2>
+          <h2> Conclusion </h2>
         </div>
         <div class="col-md-6 col-md-5">
           <p>
@@ -436,11 +436,8 @@
       </p>
     </div>
   </footer>
-  <script
-  			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  			  crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d6d4546d0f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -17,16 +17,16 @@
   <header>
     <div class="container">
       <div id="myNavtoggle" class="navtoggle">
-      <a href="#" class="logo">Lily Cabot-King</a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" id="navigation">Work</a></li>
-          <li><a href="about.html" id="navigation">About</a></li>
-          <li><a href="#contact" id="navigation" onclick="myFunction()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+        <a href="#" class="logo">Lily Cabot-King</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" id="navigation">Work</a></li>
+            <li><a href="about.html" id="navigation">About</a></li>
+            <li><a href="#contact" id="navigation" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -39,10 +39,10 @@
 
     <div id="story">
       <div class="container">
-          <picture>
-            <source srcset="img/about/me.jpg" media="(max-width:767px)">
-            <img src="img/about/me.jpg" alt="Me">
-          </picture>
+        <picture>
+          <source srcset="img/about/me.jpg" media="(max-width:767px)">
+          <img src="img/about/me.jpg" alt="Me">
+        </picture>
         <div class="row">
           <div class="column">
             <h2>My Story</h2>
@@ -54,9 +54,9 @@
               impact on society. The work of a designer is more complex than what we make it out to be and that is why I am attracted to a career in UX Design.</p>
             <p>I feel that I am a great designer because I am three things: curious, creative and caring.</p>
             <p>In my spare time, I eat, travel, 'Marie Kondo’ my apartment and listen to true crime podcasts.<p>
-              <div class="download">
-                <a href="files/cv.pdf"> Download my CV</a>
-              </div>
+                <div class="download">
+                  <a href="files/cv.pdf"> Download my CV</a>
+                </div>
           </div>
           <div>
             <h2>Skills & Tools</h2>
@@ -112,11 +112,8 @@
     </div>
 
   </footer>
-  <script
-  			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  			  crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
