@@ -80,10 +80,9 @@ a:active {
 }
 
 .button2 {
-  text-weight: 300;
   display: inline-block;
   background-color: #E95330;
-  color: white !important;
+  color: black !important;
   font-weight: 400;
   text-decoration: none;
   padding: 10px 15px 10px 15px;
@@ -98,10 +97,9 @@ a:active {
 }
 
 .button3 {
-  text-weight: 300;
   display: inline-block;
   background-color: #3EB497;
-  color: white !important;
+  color: black !important;
   font-weight: 400;
   text-decoration: none;
   padding: 10px 15px 10px 15px;
@@ -149,14 +147,14 @@ p {
 }
 
 #work svg {
-  width 100%;
-  max-width 100%;
-  height: auto
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+  fill: #edc655;
   }
 
   50% {
@@ -248,7 +246,7 @@ nav>ul {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba (255, 127, 80, 0.5)
+  border-top: 1px solid #fff;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -429,7 +427,7 @@ main {
 #design h2 {
   margin-top: 20px;
   text-align: center;
-  margin: 60px;
+  margin-bottom: 60px;
 }
 
 #design h3 {
